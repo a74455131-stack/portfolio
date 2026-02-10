@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #cbd5f5;
+}
+
+.hero p {
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.buttons a.secondary {
+    background-color: transparent;
+    color: #38bdf8;
+    border: 2px solid #38bdf8;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+/* SKILLS */
+.skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.skills li {
+    background-color: #1e293b;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* PROJECTS */
+.project-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.project-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #020617;
+    color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+}
